@@ -44,8 +44,8 @@ Pastikan untuk mengganti `YOUR_CLIENT_ID` dengan ID klien Google yang valid dari
 
 # Screenshot
 <div style="display: flex; justify-content: space-between;">
-  <img src="src/assets/images/Login.png" height="300px">
-  <img src="src/assets/images/AlertLogin.png" height="300px">
-  <img src="src/assets/images/Home.png" height="300px">
-  <img src="src/assets/images/Profile.png" height="300px">
+  <img src="src/assets/login.png" height="300px">
+  <img src="src/assets/akun.png" height="300px">
+  <img src="src/assets/homepage.png" height="300px">
+  <img src="src/assets/profile.png" height="300px">
 </div>
