@@ -87,3 +87,37 @@ Halaman utama aplikasi yang menampilkan daftar todo dan implementasi CRUD:
 ### Halaman Profile
 <img src="src/assets/profile.png" height="300px">
 Menampilkan informasi pengguna yang sedang login termasuk foto profil dan email, serta tombol untuk logout dari aplikasi.
+
+# Build Project Ionic ke bentuk APK
+
+## Konfigurasi Project
+### ionic build
+<img src="src/assets/IonicBuild.png" height="300px">
+Perintah ini akan membuild project Ionic kita menjadi file statis yang siap dideploy. Proses ini mengkompilasi semua kode TypeScript, Vue components, dan asset lainnya menjadi bundle yang optimal.
+
+## Install dependencies
+### npm install @capacitor/android
+Menginstall package Capacitor untuk Android yang diperlukan untuk mengkonversi aplikasi web kita menjadi aplikasi native Android. Package ini menyediakan bridge antara kode web dan native Android.
+
+## Build aplikasi
+### npm run build
+Membuild aplikasi Vue.js untuk production. Proses ini mengoptimasi semua asset dan kode untuk performa terbaik. Output akan disimpan di folder `dist/`.
+
+## Add Android platform
+### npx cap add android
+Menambahkan platform Android ke project Capacitor. Ini akan membuat folder `android/` yang berisi semua file yang diperlukan untuk project Android native, termasuk struktur project Android Studio.
+
+## Copy web assets
+### npx cap copy
+Menyalin semua file web yang telah di-build (dari folder `dist/`) ke dalam project Android native. Ini memastikan aplikasi web kita terintegrasi dengan benar ke dalam container native.
+
+## Sync project
+### npx cap sync android
+Mensinkronkan semua perubahan, termasuk:
+- Plugin yang diinstall
+- Konfigurasi Capacitor
+- Web assets
+- Dependencies native
+Proses ini memastikan project Android memiliki semua komponen yang diperlukan.
+
+## Open Project di Android Studio
